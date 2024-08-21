@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #dcdddc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000000;
+    overflow: hidden;
+}
+
+input::placeholder {
+    color: #999; 
+    font-style: italic; 
+}
+
+.container {
+    background: #b8ecea;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(5, 4, 7, 0.74);
+    max-width: 700px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: #020101;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+label[for="sexo"] {
+    display: inline-block; 
+    margin-right: 10px; 
+    font-weight: bold; 
+}
+
+input[type="radio"] {
+    margin: 0 5px 0 0; 
+}
+
+label[for="feminino"], 
+label[for="masculino"] {
+    display: inline; 
+    margin-right: 15px; 
+    font-size: 15px; 
+    cursor: pointer; 
+}
+
+label[for="uf"] {
+    display: inline-block;
+    margin-right: 5px; 
+}
+
+select#uf {
+    display: inline-block;
+    width: auto; 
+    color: #7a7979;
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    border: 1px solid #8a8888; /* Cor da borda */
+    padding: 4px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte consistente */
+    font-size: 14px; /* Tamanho de fonte consistente */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 9px;
+    border: 1px solid #adadad;
+    border-radius: 5px;
+    transition: border-color 0.2s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte consistente */
+    font-size: 14px; /* Tamanho de fonte consistente */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #999999;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.hobbies {
+    margin-top: 10px;
+}
+
+.hobbies label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.actions input[type="button"],
+.actions input[type="reset"],
+.actions input[type="submit"] {
+    background-color: #066568;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actions input[type="button"]:hover,
+.actions input[type="reset"]:hover,
+.actions input[type="submit"]:hover {
+    background-color: #757575;
+}
+
+.actions input[type="reset"] {
+    background-color: #696868;
+}
+
+.actions input[type="reset"]:hover {
+    background-color: #817f7f;
+}
+
+.actions input[type="button"] {
+    background-color: #000000;
+}
+
+.actions input[type="button"]:hover {
+    background-color: #c0c0c0;
+}
